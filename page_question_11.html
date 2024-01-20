@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+            body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            
+        }
+        @media screen and (max-width:500px){
+            .container button {
+                margin-bottom: 20px;
+                width: 40%;
+                height: 50px;
+                background-color: #fff;
+                border: 1px solid black;
+                border-radius: 100px;
+                position: relative;
+                scroll-behavior: smooth;
+            }
+            .container button:active {
+                background-color: #ffb411;
+            }
+            img {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <br><br>
+    <h1>ไปดูหนังกันป่าว ?</h1>
+    <img src="love_you_na_jubjub.gif" alt="luk na ja jub jub">
+    <br><br><br><br>
+    <div class="container">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes !!</button>
+        <button class="btn" id="no_btn" onmouseover="moveButton()">No !!</button>
+    </div>
+    
+</body>
+</html>
