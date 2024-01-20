@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @media screen and (max-width:500px) {
+
+            .container {
+                display: grid;
+                grid-template-rows: 200px 1fr;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "Q"
+                    "S";
+                min-height: 100vh;
+
+            }
+
+            .Q {
+                grid-area: "Q";
+                text-align: center;
+                margin-top: 150px;
+            }
+
+            .S {
+                grid-area: "S";
+                text-align: center;
+                margin-top: 70px;
+            }
+
+            .Q h1 {
+                color: #000;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%;
+                /* 36px */
+                letter-spacing: -0.528px;
+            }
+
+            .S a {
+                text-decoration: none;
+                color: black;
+                background-color: yellow;
+                border-radius: 100px;
+                background: #FBDE3F;
+                padding: 13px 37%;
+                font-size: 20px;
+            }
+
+            .S a:active {
+                color: white;
+                transform: scale(0.96);
+            }
+
+            i {
+                color: black;
+            }
+
+            i:active {
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html">
+        <i class="fa fa-angle-left" style="font-size:48px; margin: 10px;"></i>
+    </a>
+    <div class="container">
+        <div class="Q">
+            <h1>Lets start now na</h1>
+        </div>
+        <div class="S">
+            <a href="page_question_1.html"><b>Lets Go</b></a>
+        </div>
+    </div>
+</body>
+
+</html>
